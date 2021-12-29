@@ -1,0 +1,218 @@
+/* INICIO MAIN */
+.main{
+    width: auto;
+    height: auto;
+    
+    & .jumbotron{
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(245, 245, 245, 0.2), whitesmoke), url("./Images/3dprinting.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        margin-top: 10vh;
+        border-radius: 0;
+        color: whitesmoke;
+        & h1{
+            font-family: $fuentePrincipal;
+            margin-bottom: 5%;
+            text-shadow: 2px 2px 2px black;
+            & i{
+                animation: infinite 5s idea1;
+            }
+            @keyframes idea1{
+                0%{
+                    transform: scale(1);
+                }
+                50%{
+                    transform: scale(1.3);
+                    color: $colorSecundario;
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+        }
+        & p{
+            font-family: $fuenteSecundaria;
+            text-shadow: 2px 2px 2px black;
+            font-style: oblique;
+            transition: 500ms;
+            margin-bottom: 5%;
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+        & .btn{
+            transition: 800ms;
+            &:hover{
+                transform: scale(0.9);
+                background-color: whitesmoke;
+                color: green;
+            }
+        }
+    }
+
+    & #portfolio{
+        height: auto;
+        & .p-left{
+            width: auto;
+            height: auto;
+            & h1{
+                font-family: $fuentePrincipal;
+                font-size: 4vmax;
+                font-weight: bold;
+                font-style: oblique;
+                transition: 500ms;
+                color: $colorPrincipal;
+                padding: 15vh 0vw 2vh 0vw;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            & p{
+                font-family: $fuenteSecundaria;
+                color: $colorSecundario;
+                font-weight: bold;
+                font-size: 2vmax;
+                & span{
+                    font-family: $fuenteSecundaria;
+                    color: whitesmoke;
+                    font-weight: bold;
+                    animation: span1 infinite 5s;
+                }
+                @keyframes span1{
+                    0%{
+                        opacity: 1;
+                        color: whitesmoke;
+                    }
+                    50%{
+                        opacity: 1;
+                        color: steelblue;
+                    }
+                    100%{
+                        opacity: 1;
+                        color: whitesmoke;
+                    }
+                }
+            }
+            & .btn{
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    background-color: whitesmoke;
+                    color: black;
+                }
+            }
+        }
+        & .p-right{
+            width: auto;
+            height: auto;
+            & .carousel-item:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    & #servicios{
+        height: auto;
+        & .s-left{
+            width: auto;
+            height: auto;
+            & h1{
+                font-family: $fuentePrincipal;
+                font-size: 4vmax;
+                font-weight: bold;
+                font-style: oblique;
+                transition: 500ms;
+                color: $colorPrincipal;
+                padding: 10vh 0vw 4vh 0vw;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            & h2{
+                color: $colorSecundario;
+                font-family: $fuenteSecundaria;
+                font-size: 2vmax;
+                margin: 0vh 1vw 5vh 1vw;
+            }
+            & .btn{
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    background-color: whitesmoke;
+                    color: black;
+                }
+            }
+        }
+        & .s-right{
+            width: auto;
+            height: auto;
+            & #carousel2{
+                margin-top: 10vh;
+                & h5{
+                    text-shadow: 0 0 2px black;
+                    font-family: $fuentePrincipal;
+                    font-size: 2vmax;
+                }
+            }
+        }
+    }
+
+    & #empresa{
+        width: auto;
+        height: auto;
+        & .e-left{
+            width: auto;
+            height: auto;
+            & h1{
+                font-family: $fuentePrincipal;
+                font-size: 4vmax;
+                font-weight: bold;
+                font-style: oblique;
+                transition: 500ms;
+                color: $colorPrincipal;
+                padding: 10vh 0vw 4vh 0vw;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                & span{
+                    color: steelblue;
+                    text-decoration: none;
+                    font-size: 4vmax;
+                    transition: 500ms;
+                }
+            }
+            & p{
+                font-family: $fuenteSecundaria;
+                color: $colorSecundario;
+                font-size: 2vmax;
+                margin: 0vh 5vw 8vh 5vw;
+                & span{
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+            & .btn{
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    background-color: whitesmoke;
+                    color: black;
+                }
+            }
+        }
+        & .e-right{
+            & #carousel3{
+                margin-top: 10vh;
+                & .carousel-item:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    & .hr{
+        background-color: whitesmoke;
+    }
+}
+/* FIN MAIN */

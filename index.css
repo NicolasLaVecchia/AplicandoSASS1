@@ -117,8 +117,8 @@ body {
 }
 
 .main .jumbotron {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(245, 245, 245, 0.2)), to(whitesmoke)), url("../Images/3dprinting.jpg");
-  background: linear-gradient(to top, black, rgba(245, 245, 245, 0.2), whitesmoke), url("../Images/3dprinting.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(245, 245, 245, 0.2)), to(whitesmoke)), url("./Images/3dprinting.jpg");
+  background: linear-gradient(to top, black, rgba(245, 245, 245, 0.2), whitesmoke), url("./Images/3dprinting.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
