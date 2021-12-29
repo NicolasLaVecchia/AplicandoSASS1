@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=PT+Sans:ital@1&family=Roboto:wght@300&display=swap");
+/* 
+    font-family: 'Cormorant Garamond', serif;
+
+    font-family: 'PT Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+*/
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* desplazamiento onepage*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+/* INICIO HEADER */
+/* inicio navbar */
+.navbar {
+  background-color: #ffb2a4 !important;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-brand img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.navbar .navbar-brand img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.navbar .navbar-toggler {
+  background-color: whitesmoke;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  margin-right: 2rem;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black !important;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #f5f5f5 !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.navbar .navbar-collapse .form-inline .btn {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.navbar .navbar-collapse .form-inline .btn:hover {
+  background-color: steelblue;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+}
+
+/* fin navbar */
+/* inicio navredes */
+.redes {
+  margin-right: 0.5rem;
+}
+
+.redes .nav-item {
+  background-color: #ffb2a4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.redes .nav-item:hover {
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+}
+
+.redes .nav-item .nav-link {
+  color: whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.redes .nav-item .nav-link:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/* fin navredes */
+/* FIN HEADER */
+/* INICIO MAIN */
+.main {
+  width: auto;
+  height: auto;
+}
+
+.main .jumbotron {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(245, 245, 245, 0.2)), color-stop(rgba(245, 245, 245, 0.1)), to(whitesmoke)), url("../Images/3dprinting.jpg");
+  background: linear-gradient(to top, black, rgba(245, 245, 245, 0.2), rgba(245, 245, 245, 0.1), whitesmoke), url("../Images/3dprinting.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  margin-top: 10vh;
+  border-radius: 0;
+  color: whitesmoke;
+}
+
+.main .jumbotron h1 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px 2px black;
+}
+
+.main .jumbotron h1 i {
+  -webkit-animation: infinite 5s idea1;
+          animation: infinite 5s idea1;
+}
+
+@-webkit-keyframes idea1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    color: gold;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes idea1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    color: gold;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.main .jumbotron p {
+  font-family: "Cormorant Garamond", serif;
+  text-shadow: 2px 2px 2px black;
+  font-style: oblique;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-bottom: 5%;
+}
+
+.main .jumbotron p:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.main .jumbotron .btn {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main .jumbotron .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: whitesmoke;
+  color: green;
+}
+
+.main #portfolio {
+  height: auto;
+}
+
+.main #portfolio .p-left {
+  width: auto;
+  height: auto;
+}
+
+.main #portfolio .p-left h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vmax;
+  font-weight: bold;
+  font-style: oblique;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #ffb2a4;
+  padding: 15vh 0vw 2vh 0vw;
+}
+
+.main #portfolio .p-left h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main #portfolio .p-left p {
+  font-family: "Cormorant Garamond", serif;
+  color: gold;
+  font-weight: bold;
+  font-size: 2vmax;
+}
+
+.main #portfolio .p-left p span {
+  font-family: "Cormorant Garamond", serif;
+  color: whitesmoke;
+  font-weight: bold;
+  -webkit-animation: span1 infinite 5s;
+          animation: span1 infinite 5s;
+}
+
+@-webkit-keyframes span1 {
+  0% {
+    opacity: 1;
+    color: whitesmoke;
+  }
+  50% {
+    opacity: 1;
+    color: steelblue;
+  }
+  100% {
+    opacity: 1;
+    color: whitesmoke;
+  }
+}
+
+@keyframes span1 {
+  0% {
+    opacity: 1;
+    color: whitesmoke;
+  }
+  50% {
+    opacity: 1;
+    color: steelblue;
+  }
+  100% {
+    opacity: 1;
+    color: whitesmoke;
+  }
+}
+
+.main #portfolio .p-left .btn {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main #portfolio .p-left .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: whitesmoke;
+  color: black;
+}
+
+.main #portfolio .p-right {
+  width: auto;
+  height: auto;
+}
+
+.main #portfolio .p-right .carousel-item:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.main #servicios {
+  height: auto;
+}
+
+.main #servicios .s-left {
+  width: auto;
+  height: auto;
+}
+
+.main #servicios .s-left h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vmax;
+  font-weight: bold;
+  font-style: oblique;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #ffb2a4;
+  padding: 10vh 0vw 4vh 0vw;
+}
+
+.main #servicios .s-left h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main #servicios .s-left h2 {
+  color: gold;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main #servicios .s-left .btn {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main #servicios .s-left .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: whitesmoke;
+  color: black;
+}
+
+.main #servicios .s-right {
+  width: auto;
+  height: auto;
+}
+
+.main #servicios .s-right #carousel2 {
+  margin-top: 10vh;
+}
+
+.main #servicios .s-right #carousel2 h5 {
+  text-shadow: 0 0 2px black;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vmax;
+}
+
+.main #empresa {
+  width: auto;
+  height: auto;
+}
+
+.main #empresa .e-left {
+  width: auto;
+  height: auto;
+}
+
+.main #empresa .e-left h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vmax;
+  font-weight: bold;
+  font-style: oblique;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #ffb2a4;
+  padding: 10vh 0vw 4vh 0vw;
+}
+
+.main #empresa .e-left h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main #empresa .e-left h1 span {
+  color: steelblue;
+  text-decoration: none;
+  font-size: 4vmax;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.main #empresa .e-left p {
+  font-family: "Cormorant Garamond", serif;
+  color: gold;
+  font-size: 2vmax;
+  margin: 0vh 5vw 8vh 5vw;
+}
+
+.main #empresa .e-left p span {
+  color: black;
+  font-weight: bold;
+}
+
+.main #empresa .e-left .btn {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main #empresa .e-left .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: whitesmoke;
+  color: black;
+}
+
+.main #empresa .e-right #carousel3 {
+  margin-top: 10vh;
+}
+
+.main #empresa .e-right #carousel3 .carousel-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main .hr {
+  background-color: whitesmoke;
+}
+
+/* FIN MAIN */
+/* INICIO FOOTER */
+.footer {
+  width: auto;
+  height: auto;
+}
+
+.footer p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1vmax;
+  font-style: italic;
+  color: whitesmoke;
+}
+
+.footer a {
+  width: 100%;
+  height: auto;
+  color: whitesmoke;
+}
+
+.footer a img {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.footer a img:hover {
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+}
+
+/* FIN FOOTER */
+/*# sourceMappingURL=index.css.map */
