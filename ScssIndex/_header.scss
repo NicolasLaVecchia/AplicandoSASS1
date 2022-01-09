@@ -36,9 +36,10 @@
         & .form-inline{
             & .btn{
                 transition: 800ms;
+
                 &:hover{
-                    background-color: steelblue;
-                    color: whitesmoke;
+                    background-color: whitesmoke;
+                    color: black;
                     border: solid 1px whitesmoke;
                 }
             }

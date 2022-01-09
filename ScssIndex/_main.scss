@@ -4,7 +4,7 @@
     height: auto;
     
     & .jumbotron{
-        background: linear-gradient(to top, rgb(0, 0, 0), rgba(245, 245, 245, 0.2), whitesmoke), url("../Images/3dprinting.jpg");
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(245, 245, 245, 0.2), whitesmoke), url("../Images/3dprinting.jpg");
         background-size: cover;
         background-position: center;
         margin: 0;
@@ -42,27 +42,30 @@
             }
         }
         & .btn{
+            background-color: whitesmoke;
+            color: black;
             transition: 800ms;
             &:hover{
                 transform: scale(0.9);
-                background-color: whitesmoke;
-                color: green;
+                color: $colorSecundario;
             }
         }
     }
-
+    @mixin fuenteh2($family, $size, $weight, $style){
+        font-family: $family;
+        font-size: $size;
+        font-weight: $weight;
+        font-style: $style;
+    }
     & #portfolio{
         height: auto;
         & .p-left{
             width: auto;
             height: auto;
-            & h1{
-                font-family: $fuentePrincipal;
-                font-size: 4vmax;
-                font-weight: bold;
-                font-style: oblique;
+            & .titulo--h2{
+                @include fuenteh2($fuentePrincipal, 4vmax, bold, oblique);
                 transition: 500ms;
-                color: $colorPrincipal;
+                color: $colorH2;
                 padding: 15vh 0vw 2vh 0vw;
                 &:hover{
                     transform: scale(1.2);
@@ -70,7 +73,7 @@
             }
             & p{
                 font-family: $fuenteSecundaria;
-                color: $colorSecundario;
+                color: $colorTerceario;
                 font-weight: bold;
                 font-size: 2vmax;
                 & span{
@@ -82,24 +85,28 @@
                 @keyframes span1{
                     0%{
                         opacity: 1;
-                        color: whitesmoke;
+                        color: $colorPrincipal;
                     }
                     50%{
                         opacity: 1;
-                        color: steelblue;
+                        color: $colorSecundario;
                     }
                     100%{
                         opacity: 1;
-                        color: whitesmoke;
+                        color: $colorPrincipal;
                     }
                 }
             }
             & .btn{
+                background-color: black;
+                color: whitesmoke;
+                border: solid 1px whitesmoke;
                 transition: 800ms;
                 &:hover{
                     transform: scale(0.9);
-                    background-color: whitesmoke;
-                    color: black;
+                    background-color: $colorPrincipal;
+                    border: solid 1px whitesmoke;
+                    color: whitesmoke;
                 }
             }
         }
@@ -111,36 +118,28 @@
             }
         }
     }
-
     & #servicios{
         height: auto;
         & .s-left{
-            width: auto;
-            height: auto;
-            & h1{
-                font-family: $fuentePrincipal;
-                font-size: 4vmax;
-                font-weight: bold;
-                font-style: oblique;
+            @extend .p-left;
+            & .titulo2--h2{
+                @include fuenteh2($fuentePrincipal, 4vmax, bold, oblique);
+                color: $colorH2;
                 transition: 500ms;
-                color: $colorPrincipal;
                 padding: 10vh 0vw 4vh 0vw;
                 &:hover{
                     transform: scale(1.2);
                 }
             }
-            & h2{
-                color: $colorSecundario;
-                font-family: $fuenteSecundaria;
-                font-size: 2vmax;
-                margin: 0vh 1vw 5vh 1vw;
-            }
             & .btn{
+                background-color: black;
+                color: whitesmoke;
+                border: solid 1px whitesmoke;
                 transition: 800ms;
                 &:hover{
                     transform: scale(0.9);
-                    background-color: whitesmoke;
-                    color: black;
+                    background-color: $colorPrincipal;
+                    border: solid 1px whitesmoke;
                 }
             }
         }
@@ -158,25 +157,37 @@
         }
     }
 
+$medidash3: (
+    "medida1": 1.5vmax,
+    "medida2": 2.1vmax,
+    "medida3": 1.7vmax,
+    "medida4": 2.3vmax,
+    "medida5": 1.9vmax,
+);
+@each $medida, $size in $medidash3{
+    .titulo--#{$medida} {
+        color: $colorTerceario;
+        font-family: $fuenteSecundaria;
+        font-size: $size;
+        margin: 0vh 1vw 5vh 1vw;
+    }
+}
+
     & #empresa{
         width: auto;
         height: auto;
         & .e-left{
-            width: auto;
-            height: auto;
-            & h1{
-                font-family: $fuentePrincipal;
-                font-size: 4vmax;
-                font-weight: bold;
-                font-style: oblique;
+            @extend .p-left;
+            & .titulo3--h2{
+                @include fuenteh2($fuentePrincipal, 4vmax, bold, oblique);
+                color: $colorH2;
                 transition: 500ms;
-                color: $colorPrincipal;
                 padding: 10vh 0vw 4vh 0vw;
                 &:hover{
                     transform: scale(1.2);
                 }
                 & span{
-                    color: steelblue;
+                    color: $colorSecundario;
                     text-decoration: none;
                     font-size: 4vmax;
                     transition: 500ms;
@@ -184,7 +195,7 @@
             }
             & p{
                 font-family: $fuenteSecundaria;
-                color: $colorSecundario;
+                color: $colorTerceario;
                 font-size: 2vmax;
                 margin: 0vh 5vw 8vh 5vw;
                 & span{
@@ -193,11 +204,14 @@
                 }
             }
             & .btn{
+                background-color: black;
+                color: whitesmoke;
+                border: solid 1px whitesmoke;
                 transition: 800ms;
                 &:hover{
                     transform: scale(0.9);
-                    background-color: whitesmoke;
-                    color: black;
+                    background-color: $colorPrincipal;
+                    border: solid 1px whitesmoke;
                 }
             }
         }

@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: whitesmoke;
 }
 
 /* INICIO HEADER */
@@ -75,8 +75,8 @@ body {
 }
 
 .navbar .navbar-collapse .form-inline .btn:hover {
-  background-color: steelblue;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: black;
   border: solid 1px whitesmoke;
 }
 
@@ -117,8 +117,8 @@ body {
 }
 
 .main .jumbotron {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(245, 245, 245, 0.2)), to(whitesmoke)), url("../Images/3dprinting.jpg");
-  background: linear-gradient(to top, black, rgba(245, 245, 245, 0.2), whitesmoke), url("../Images/3dprinting.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(245, 245, 245, 0.2)), to(whitesmoke)), url("../Images/3dprinting.jpg");
+  background: linear-gradient(to bottom, black, rgba(245, 245, 245, 0.2), whitesmoke), url("../Images/3dprinting.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -146,7 +146,7 @@ body {
   50% {
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
-    color: gold;
+    color: goldenrod;
   }
   100% {
     -webkit-transform: scale(1);
@@ -162,7 +162,7 @@ body {
   50% {
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
-    color: gold;
+    color: goldenrod;
   }
   100% {
     -webkit-transform: scale(1);
@@ -185,6 +185,8 @@ body {
 }
 
 .main .jumbotron .btn {
+  background-color: whitesmoke;
+  color: black;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -192,43 +194,42 @@ body {
 .main .jumbotron .btn:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color: whitesmoke;
-  color: green;
+  color: goldenrod;
 }
 
 .main #portfolio {
   height: auto;
 }
 
-.main #portfolio .p-left {
+.main #portfolio .p-left, .main #portfolio #servicios .s-left, .main #servicios #portfolio .s-left, .main #portfolio #empresa .e-left, .main #empresa #portfolio .e-left {
   width: auto;
   height: auto;
 }
 
-.main #portfolio .p-left h1 {
+.main #portfolio .p-left .titulo--h2, .main #portfolio #servicios .s-left .titulo--h2, .main #servicios #portfolio .s-left .titulo--h2, .main #portfolio #empresa .e-left .titulo--h2, .main #empresa #portfolio .e-left .titulo--h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4vmax;
   font-weight: bold;
   font-style: oblique;
   -webkit-transition: 500ms;
   transition: 500ms;
-  color: #ffb2a4;
+  color: black;
   padding: 15vh 0vw 2vh 0vw;
 }
 
-.main #portfolio .p-left h1:hover {
+.main #portfolio .p-left .titulo--h2:hover, .main #portfolio #servicios .s-left .titulo--h2:hover, .main #servicios #portfolio .s-left .titulo--h2:hover, .main #portfolio #empresa .e-left .titulo--h2:hover, .main #empresa #portfolio .e-left .titulo--h2:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.main #portfolio .p-left p {
+.main #portfolio .p-left p, .main #portfolio #servicios .s-left p, .main #servicios #portfolio .s-left p, .main #portfolio #empresa .e-left p, .main #empresa #portfolio .e-left p {
   font-family: "Cormorant Garamond", serif;
-  color: gold;
+  color: #818181;
   font-weight: bold;
   font-size: 2vmax;
 }
 
-.main #portfolio .p-left p span {
+.main #portfolio .p-left p span, .main #portfolio #servicios .s-left p span, .main #servicios #portfolio .s-left p span, .main #portfolio #empresa .e-left p span, .main #empresa #portfolio .e-left p span {
   font-family: "Cormorant Garamond", serif;
   color: whitesmoke;
   font-weight: bold;
@@ -239,43 +240,47 @@ body {
 @-webkit-keyframes span1 {
   0% {
     opacity: 1;
-    color: whitesmoke;
+    color: #ffb2a4;
   }
   50% {
     opacity: 1;
-    color: steelblue;
+    color: goldenrod;
   }
   100% {
     opacity: 1;
-    color: whitesmoke;
+    color: #ffb2a4;
   }
 }
 
 @keyframes span1 {
   0% {
     opacity: 1;
-    color: whitesmoke;
+    color: #ffb2a4;
   }
   50% {
     opacity: 1;
-    color: steelblue;
+    color: goldenrod;
   }
   100% {
     opacity: 1;
-    color: whitesmoke;
+    color: #ffb2a4;
   }
 }
 
-.main #portfolio .p-left .btn {
+.main #portfolio .p-left .btn, .main #portfolio #servicios .s-left .btn, .main #servicios #portfolio .s-left .btn, .main #portfolio #empresa .e-left .btn, .main #empresa #portfolio .e-left .btn {
+  background-color: black;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
 
-.main #portfolio .p-left .btn:hover {
+.main #portfolio .p-left .btn:hover, .main #portfolio #servicios .s-left .btn:hover, .main #servicios #portfolio .s-left .btn:hover, .main #portfolio #empresa .e-left .btn:hover, .main #empresa #portfolio .e-left .btn:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color: whitesmoke;
-  color: black;
+  background-color: #ffb2a4;
+  border: solid 1px whitesmoke;
+  color: whitesmoke;
 }
 
 .main #portfolio .p-right {
@@ -292,35 +297,26 @@ body {
   height: auto;
 }
 
-.main #servicios .s-left {
-  width: auto;
-  height: auto;
-}
-
-.main #servicios .s-left h1 {
+.main #servicios .s-left .titulo2--h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4vmax;
   font-weight: bold;
   font-style: oblique;
+  color: black;
   -webkit-transition: 500ms;
   transition: 500ms;
-  color: #ffb2a4;
   padding: 10vh 0vw 4vh 0vw;
 }
 
-.main #servicios .s-left h1:hover {
+.main #servicios .s-left .titulo2--h2:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.main #servicios .s-left h2 {
-  color: gold;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2vmax;
-  margin: 0vh 1vw 5vh 1vw;
-}
-
 .main #servicios .s-left .btn {
+  background-color: black;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -328,8 +324,8 @@ body {
 .main #servicios .s-left .btn:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color: whitesmoke;
-  color: black;
+  background-color: #ffb2a4;
+  border: solid 1px whitesmoke;
 }
 
 .main #servicios .s-right {
@@ -347,34 +343,64 @@ body {
   font-size: 2vmax;
 }
 
+.main .titulo--medida1 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida2 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.1vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida3 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida4 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.3vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida5 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.9vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
 .main #empresa {
   width: auto;
   height: auto;
 }
 
-.main #empresa .e-left {
-  width: auto;
-  height: auto;
-}
-
-.main #empresa .e-left h1 {
+.main #empresa .e-left .titulo3--h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4vmax;
   font-weight: bold;
   font-style: oblique;
+  color: black;
   -webkit-transition: 500ms;
   transition: 500ms;
-  color: #ffb2a4;
   padding: 10vh 0vw 4vh 0vw;
 }
 
-.main #empresa .e-left h1:hover {
+.main #empresa .e-left .titulo3--h2:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.main #empresa .e-left h1 span {
-  color: steelblue;
+.main #empresa .e-left .titulo3--h2 span {
+  color: goldenrod;
   text-decoration: none;
   font-size: 4vmax;
   -webkit-transition: 500ms;
@@ -383,7 +409,7 @@ body {
 
 .main #empresa .e-left p {
   font-family: "Cormorant Garamond", serif;
-  color: gold;
+  color: #818181;
   font-size: 2vmax;
   margin: 0vh 5vw 8vh 5vw;
 }
@@ -394,6 +420,9 @@ body {
 }
 
 .main #empresa .e-left .btn {
+  background-color: black;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -401,8 +430,8 @@ body {
 .main #empresa .e-left .btn:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color: whitesmoke;
-  color: black;
+  background-color: #ffb2a4;
+  border: solid 1px whitesmoke;
 }
 
 .main #empresa .e-right #carousel3 {
@@ -429,7 +458,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 1vmax;
   font-style: italic;
-  color: whitesmoke;
+  color: #818181;
 }
 
 .footer a {
